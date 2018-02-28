@@ -1,0 +1,7 @@
+<h1>Click a Department to browse</h1>
+<%= link_to 'Create Department', new_department_path %>
+<% @departments.each do|department| %>
+  <h3>
+    <%= link_to department.name, department%>
+  </h3>
+<% end %>

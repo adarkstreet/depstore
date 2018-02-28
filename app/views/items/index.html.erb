@@ -1,0 +1,7 @@
+<h1>Click an Item to look closer</h1>
+<%= link_to 'Create Item', new_item_path %>
+<% @items.each do |item| %>
+  <h3>
+    <%= link_to item.name, department_items%>
+  </h3>
+<% end %>
